@@ -37,7 +37,7 @@ pipeline {
                     sh '''
                         # god help me if I ever do anything concurrently
                         rm -rf ~/.kube && mkdir ~/.kube && chmod 700 ~/.kube && rm -f ~/.kube/config && ln -s ${secretFile} ~/.kube/config
-                        helm upgrade -f values.yaml keycloak-1734226363 bitnami/keycloak --namespace paircoded
+                        helm upgrade -f values.yaml keycloak bitnami/keycloak --namespace paircoded
                        '''
                }
             }
