@@ -1,6 +1,11 @@
 global:
   defaultStorageClass: "local-storage"
 
+auth:
+  adminUser: user
+  adminPassword: ThisIsAStarter1
+
+
 affinity:
   nodeAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
