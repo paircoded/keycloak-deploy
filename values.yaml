@@ -6,7 +6,7 @@ ingress:
     tls: true
     extraTls:
         - hosts:
-            - accounts-admin.paircoded.com
+            - accounts.paircoded.com
           secretName: "wildcard-paircoded-com"
 
 
