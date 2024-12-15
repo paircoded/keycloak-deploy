@@ -1,0 +1,23 @@
+ingress:
+    enabled: true
+    ingessClassName: "nginx"
+    hostname: accounts.paircoded.com
+    hostnameStrict: true
+    tls: true
+    extraTls:
+        - hosts:
+            - accounts-admin.paircoded.com
+          secretName: "wildcard-paircoded-com"
+
+
+adminIngress:
+    enabled: true
+    ingessClassName: "nginx"
+    hostname: accounts-admin.paircoded.com
+    hostnameStrict: true
+    tls: true
+    extraTls:
+        - hosts:
+            - accounts-admin.paircoded.com
+          secretName: "wildcard-paircoded-com"
+
