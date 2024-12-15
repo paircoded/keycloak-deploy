@@ -1,8 +1,7 @@
 ingress:
     enabled: true
-    ingessClassName: "nginx"
+    ingressClassName: "nginx"
     hostname: accounts.paircoded.com
-    hostnameStrict: true
     tls: true
     extraTls:
         - hosts:
@@ -12,7 +11,7 @@ ingress:
 
 adminIngress:
     enabled: true
-    ingessClassName: "nginx"
+    ingressClassName: "nginx"
     hostname: accounts-admin.paircoded.com
     hostnameStrict: true
     tls: true
